@@ -1,0 +1,120 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+    outline: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('abstract_background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: fantasy;
+    font-style: italic;
+    padding-bottom: 3em;
+}
+
+.music {
+    padding-bottom: 3em;
+}
+
+
+h1 {
+    color: mediumpurple;
+    font-size: 4em;
+    padding-bottom: .5em;
+    text-shadow: 0.03em 0.03em 1.5em gold;
+    text-transform: capitalize;
+}
+
+.search {
+    padding-bottom: 5em;
+}
+
+#search-form {
+    display: inline-flex;
+    font-size: 20px;
+}
+
+#search_field {
+    font-size: inherit;
+    border: 0.5em solid gold;
+    border-radius: 15px;
+    color: mediumpurple;
+    padding: 0.2em 0.5em;
+    outline: 0;
+    width: 50em;
+}
+
+#submit_button {
+    font-size: inherit;
+    border: 0.2em solid gold;
+    border-radius: 15px;
+    background-color: gold;
+    border-left: 0;
+    padding: 0 0.7em;
+    color: mediumpurple;
+    outline: 0;
+    cursor: progress;
+}
+
+submit_button:hover,
+submit_button: focus {
+    border-color: deeppink;
+    background-color: pink;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.artist_container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 25%;
+}
+
+img {
+    box-shadow: .25em .25em .5em;
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+}
+
+.title_artist {
+    align-self: center;
+}
+
+.title {
+    width: 20%;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#title {
+    color: gold;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+#artist {
+    color: gold;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
